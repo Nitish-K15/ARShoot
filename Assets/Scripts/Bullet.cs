@@ -5,11 +5,16 @@ using UnityEngine;
 public class Bullet : MonoBehaviour
 {
     private Rigidbody rigidBody;
+    public GameObject explosion;
+    public AudioClip explode;
 
+    private void OnEnable()
+    {
+        Invoke(nameof(DestroySelf), 2f);
+    }
     private void Start()
     {
         rigidBody = GetComponent<Rigidbody>();
-        Invoke(nameof(DestroySelf), 2f);
     }
 
     private void Update()
@@ -21,13 +26,16 @@ public class Bullet : MonoBehaviour
     {
         if(other.gameObject.CompareTag("Enemy"))
         {
+            SoundManager.Instance.Play(explode);
             Destroy(other.gameObject);
-            Destroy(gameObject);
+            var expl = Instantiate(explosion, transform.position, Quaternion.identity);
+            Destroy(expl, 1);
+            DestroySelf();
         }
     }
 
     void DestroySelf()
     {
-        Destroy(gameObject);
+        this.gameObject.SetActive(false);
     }
 }

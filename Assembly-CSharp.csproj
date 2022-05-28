@@ -56,22 +56,26 @@
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\ExampleAssets\Scripts\ARFeatheredPlaneMeshVisualizer.cs" />
-    <Compile Include="Assets\ExampleAssets\Scripts\AnchorCreator.cs" />
     <Compile Include="Assets\Scripts\Spawner.cs" />
-    <Compile Include="Assets\Scripts\Enemy.cs" />
-    <Compile Include="Assets\Scripts\Player.cs" />
-    <Compile Include="Assets\FPS Pack\Scripts\FPSRandomRotateAngle.cs" />
-    <Compile Include="Assets\FPS Pack\Scripts\FPSParticleSystemScaler.cs" />
-    <Compile Include="Assets\FPS Pack\Scripts\FPSShaderFloatCurves.cs" />
-    <Compile Include="Assets\FPS Pack\Scripts\FPSShaderColorGradient.cs" />
-    <Compile Include="Assets\FPS Pack\Scripts\Demo\FPSDemoGUI.cs" />
-    <Compile Include="Assets\FPS Pack\Scripts\FPSLightCurves.cs" />
-    <Compile Include="Assets\FPS Pack\Scripts\MaterialType.cs" />
-    <Compile Include="Assets\FPS Pack\Scripts\Demo\FPSDemoReactivator.cs" />
-    <Compile Include="Assets\FPS Pack\Scripts\Demo\MouseLock.cs" />
-    <Compile Include="Assets\FPS Pack\Scripts\Demo\FPSFireManager.cs" />
     <Compile Include="Assets\Scripts\Bullet.cs" />
+    <Compile Include="Assets\FPS Pack\Scripts\FPSLightCurves.cs" />
+    <Compile Include="Assets\Scripts\Player.cs" />
+    <Compile Include="Assets\ExampleAssets\Scripts\ARFeatheredPlaneMeshVisualizer.cs" />
+    <Compile Include="Assets\FPS Pack\Scripts\Demo\FPSDemoGUI.cs" />
+    <Compile Include="Assets\FPS Pack\Scripts\FPSRandomRotateAngle.cs" />
+    <Compile Include="Assets\FPS Pack\Scripts\FPSShaderFloatCurves.cs" />
+    <Compile Include="Assets\FPS Pack\Scripts\MaterialType.cs" />
+    <Compile Include="Assets\FPS Pack\Scripts\Demo\MouseLock.cs" />
+    <Compile Include="Assets\Scripts\UI.cs" />
+    <Compile Include="Assets\ExampleAssets\Scripts\AnchorCreator.cs" />
+    <Compile Include="Assets\FPS Pack\Scripts\Demo\FPSDemoReactivator.cs" />
+    <Compile Include="Assets\Scripts\SoundManager.cs" />
+    <Compile Include="Assets\FPS Pack\Scripts\FPSShaderColorGradient.cs" />
+    <Compile Include="Assets\Scripts\Enemy.cs" />
+    <Compile Include="Assets\FPS Pack\Scripts\Demo\FPSFireManager.cs" />
+    <Compile Include="Assets\FPS Pack\Scripts\FPSParticleSystemScaler.cs" />
+    <Compile Include="Assets\Scripts\ObjectPool.cs" />
+    <Compile Include="Assets\Scripts\Initial.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
@@ -823,6 +827,9 @@
     </Reference>
     <Reference Include="Unity.VisualScripting.Core.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.Core.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.2D.Sprite.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Subsystem.Registration">
       <HintPath>Library\ScriptAssemblies\Unity.Subsystem.Registration.dll</HintPath>
