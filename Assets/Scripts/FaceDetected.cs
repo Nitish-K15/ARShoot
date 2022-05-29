@@ -23,11 +23,11 @@ public class FaceDetected : MonoBehaviour
 
     void FacesChanged(ARFacesChangedEventArgs aRFacesChangedEventArgs)
     {
-        if(aRFacesChangedEventArgs.updated != null && aRFacesChangedEventArgs.updated.Count>0)
+        if (aRFacesChangedEventArgs.updated != null && aRFacesChangedEventArgs.updated.Count > 0)
         {
             startButton.SetActive(true);
         }
-        if(aRFacesChangedEventArgs.removed.Count>0)
+        if (aRFacesChangedEventArgs.removed.Count > 0)
         {
             startButton.SetActive(false);
         }

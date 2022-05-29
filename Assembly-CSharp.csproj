@@ -59,6 +59,7 @@
     <Compile Include="Assets\Scripts\Spawner.cs" />
     <Compile Include="Assets\Scripts\Bullet.cs" />
     <Compile Include="Assets\FPS Pack\Scripts\FPSLightCurves.cs" />
+    <Compile Include="Assets\Scripts\Initial.cs" />
     <Compile Include="Assets\Scripts\Player.cs" />
     <Compile Include="Assets\ExampleAssets\Scripts\ARFeatheredPlaneMeshVisualizer.cs" />
     <Compile Include="Assets\FPS Pack\Scripts\Demo\FPSDemoGUI.cs" />
@@ -69,13 +70,13 @@
     <Compile Include="Assets\Scripts\UI.cs" />
     <Compile Include="Assets\ExampleAssets\Scripts\AnchorCreator.cs" />
     <Compile Include="Assets\FPS Pack\Scripts\Demo\FPSDemoReactivator.cs" />
+    <Compile Include="Assets\Scripts\ObjectPool.cs" />
     <Compile Include="Assets\Scripts\SoundManager.cs" />
     <Compile Include="Assets\FPS Pack\Scripts\FPSShaderColorGradient.cs" />
     <Compile Include="Assets\Scripts\Enemy.cs" />
     <Compile Include="Assets\FPS Pack\Scripts\Demo\FPSFireManager.cs" />
     <Compile Include="Assets\FPS Pack\Scripts\FPSParticleSystemScaler.cs" />
-    <Compile Include="Assets\Scripts\ObjectPool.cs" />
-    <Compile Include="Assets\Scripts\Initial.cs" />
+    <Compile Include="Assets\Scripts\FaceDetected.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

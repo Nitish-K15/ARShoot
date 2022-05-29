@@ -14,7 +14,11 @@ public class Enemy : MonoBehaviour
 
     private void Update()
     {
-        transform.LookAt(player);
+        Vector3 relativePos = player.position - transform.position;
+        Quaternion rotation = Quaternion.LookRotation(relativePos, Vector3.up);
+        Quaternion targetRotation = Quaternion.Slerp(transform.rotation, rotation, 10 * Time.deltaTime);
+        transform.rotation = targetRotation;
+        //transform.LookAt(player);
         transform.Translate(Vector3.forward * speed * Time.deltaTime);
     }
 }
